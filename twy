@@ -415,7 +415,7 @@ TitleBarLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TitleBarLabel.BorderSizePixel = 0
 TitleBarLabel.Size = UDim2.new(1, 0, 0, 30)
 TitleBarLabel.Font = Enum.Font.Unknown
-TitleBarLabel.Text = "╭∩╮( ＾◡＾)╭∩╮ twy"
+TitleBarLabel.Text = ">-< twy"
 TitleBarLabel.TextColor3 = lavender
 TitleBarLabel.TextScaled = true
 TitleBarLabel.TextSize = 14.000
@@ -925,7 +925,7 @@ Welcome_Label.BorderSizePixel = 0
 Welcome_Label.Position = UDim2.new(0, 150, 0, 25)
 Welcome_Label.Size = UDim2.new(0, 200, 0, 100)
 Welcome_Label.Font = Enum.Font.SourceSans
-Welcome_Label.Text = ("Hello, @"..plr.Name.." na scripter!\nPress [B] kasi bobo ka")
+Welcome_Label.Text = ("Hello, @"..plr.Name.." welcomee ^_^ \nPress [B] to open and close ui")
 Welcome_Label.TextColor3 = lavender
 Welcome_Label.TextSize = 24.000
 Welcome_Label.TextWrapped = true
@@ -3003,7 +3003,7 @@ FreeEmotes_Button.MouseButton1Click:Connect(function()
 	if not FreeEmotesEnabled then
 		FreeEmotesEnabled = true
 		SendNotify("twy","./.")
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/jiaozushi/robloxscript/refs/heads/main/allemotes"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xo-twyy/emotestwy/refs/heads/main/emotes"))()
 	end
 end)
 
