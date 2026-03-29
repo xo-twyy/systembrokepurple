@@ -2904,12 +2904,17 @@ AntiAFK_Button.MouseButton1Click:Connect(function()
 	ChangeToggleColor(AntiAFK_Button)
 	if AntiAFK_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		AntiAFKFunction = plr.Idled:Connect(function()
-			local VirtualUser = game:GetService("VirtualUser")
-			VirtualUser:CaptureController()
-			VirtualUser:ClickButton2(Vector2.new())
+			pcall(function()
+				local VirtualUser = game:GetService("VirtualUser")
+				VirtualUser:CaptureController()
+				VirtualUser:ClickButton2(Vector2.new())
+			end)
 		end)
 	else
-		AntiAFKFunction:Disconnect()
+		if AntiAFKFunction then
+			AntiAFKFunction:Disconnect()
+			AntiAFKFunction = nil
+		end
 	end
 end)
 
